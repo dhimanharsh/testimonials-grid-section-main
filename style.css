@@ -1,0 +1,334 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+
+main {
+    width: 80%;
+    height: 700px;
+    margin: 6% auto;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 20rem);
+    gap: 1rem;
+}
+
+.box {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0rem 2rem;
+    box-shadow: 0px 0px 5px 3px hsla(217, 30%, 14%, 0.132);
+    transition: all .4s;
+    cursor: pointer;
+    &:hover{
+        transform:scale(1.03);
+    }  
+}
+
+.box5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0rem 2rem;
+}
+
+.box7 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+}
+
+.box9 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+
+.profile {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name p{
+    color: white;
+}
+.name span{
+    color: white;
+    opacity: 50%;
+    font-size: .8em;
+}
+.profile img {
+    border-radius: 50%;
+    height: 2rem;
+}
+
+.box5 h2{
+    color: white;
+}
+.box5 article{
+    color: white;
+    opacity: 50%;
+}
+
+/* box6 */
+.box6{
+    background: hsl(217, 19%, 35%);
+   
+}
+.box6 .profile{
+    width: 65%;
+}
+
+
+.box6 h2{
+    color: white;
+}
+.box6 article{
+    color: white;
+    opacity: 50%;
+}
+/* box7 */
+.box7{
+    background: hsl(0, 0%, 100%);
+   
+}
+.box7 .profile{
+    width: 60%;
+}
+.box7 .profile p{
+    color: hsl(217, 19%, 35%);
+}
+.box7 .profile span{
+    color: hsl(217, 19%, 35%);
+}
+
+.box7 h2{
+    color: hsl(217, 19%, 35%);
+}
+.box7 article{
+    color: hsl(217, 19%, 35%);
+    opacity: 50%;
+}
+/* box8 */
+.box8{
+    background: hsl(0, 0%, 100%);
+    
+}
+.box8 .profile{
+    width: 64%;
+}
+.box8 .profile p{
+    color: hsl(217, 19%, 35%);
+}
+.box8 .profile span{
+    color: hsl(217, 19%, 35%);
+}
+
+.box8 h2{
+    color: hsl(217, 19%, 35%);
+}
+.box8 article{
+    color: hsl(217, 19%, 35%);
+    opacity: 50%;
+}
+/* box9 */
+.box9{
+    background:  hsl(219, 29%, 14%);
+   
+}
+.box9 .profile{
+    width: 25%;
+}
+
+
+.box9 h2{
+    color: white;
+}
+.box9 article{
+    color: white;
+    opacity: 50%;
+}
+
+
+@media screen and (max-width:1300px) {
+    main {
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(5, 24rem);
+    }
+    .box8 .profile{
+        width: 84%;
+    }
+    .box5 .profile{
+        width: 30%;
+    }
+    .box7 .profile{
+        width: 90%;
+    }
+    .box6 .profile{
+        width: 80%;
+    }
+    .box9 .profile{
+        width: 30%;
+    }
+    .box7 article{
+        overflow: hidden;
+        font-size: .9rem;
+    }
+}    
+@media screen and (max-width:1150px) {
+    main {
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(5, 24rem);
+    }
+    .box8 .profile{
+        width: 100%;
+    }
+    .box5 .profile{
+        width: 40%;
+    }
+    .box7 .profile{
+        width: 90%;
+    }
+    .box6 .profile{
+        width: 100%;
+    }
+    .box6 p{
+        font-size: .9rem;
+    }
+    .box8 p{
+        font-size: .9rem;
+    }
+    .box9 .profile{
+        width: 40%;
+    }
+    .box7 article{
+        overflow: hidden;
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width:1000px) {
+    main {
+        grid-template-columns: repeat(3, 180px);
+        grid-template-rows: repeat(5, 30rem);
+    }
+    .box6 .profile{
+        width: 100%;
+    }
+    .box6 p{
+        font-size: .7rem;
+    }
+    .box6 span{
+        font-size: .7rem;
+    }
+    
+    .box8 .profile{
+        width: 100%;
+    } 
+    .box8 p{
+        font-size: .7rem;
+    }
+    .box8 span{
+        font-size: .7rem;
+    }
+    .box9 .profile{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    main {
+        grid-template-columns: repeat(3, 190px);
+        grid-template-rows: repeat(5, 20rem);
+    }
+    .box .profile{
+        width: 25%;
+    }
+   
+    .box {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .box7 {
+
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .box6 {
+
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .box8 {
+
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .box9 {
+
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+}
+
+@media screen and (max-width:700px) {
+    
+    main {
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(5, 25rem);
+    }
+    .box .profile{
+        width: 35%;
+    }
+}
+@media screen and (max-width:560px) {
+    
+    main {
+        grid-template-columns: repeat(3, 120px);
+        grid-template-rows: repeat(5, 28rem);
+    }
+    .box .profile{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:470px) {
+    
+    main {
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(5, 30rem);
+    }
+    .box .profile{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:390px) {
+    
+    main {
+        grid-template-columns: repeat(3, 90px);
+        grid-template-rows: repeat(5, 35rem);
+    }
+    .box .profile{
+        width: 60%;
+    }
+}
